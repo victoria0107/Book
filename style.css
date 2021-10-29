@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 article{
   background-color: #bfc8ff;
   text-align: center;
@@ -16,4 +21,19 @@ aside{
   background-color: #0f2fff;
   text-align: center;
 
+}
+header{
+  background-color: #9ca3c9;
+}
+nav{
+  background-color: #0d6653;
+}
+footer{
+  background-color: #29399b;
+}
+span{
+  background-color: #ffd1d1;
+}
+input{
+  width: 100px;
 }

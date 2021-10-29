@@ -4,14 +4,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>MARK_UP_Language__Study</title>
   <link rel="stylesheet" href="style.css">
   <script src="/script.js"></script>
 </head>
 <body>
-  <article>article</article>
-  <div>div</div>
-  <section>section</section>
-  <aside>aside</aside>
+  <header>
+    보통 웹 페이지 상단 부분의 배치된다.주로 페이지 제목,로고나 아이콘,페이지의 관한 간단한 설명,
+    네비게이션을 포함한다.
+    <nav>
+      네비게이션 역할을 한다.즉,해당 페이지의 목차(index)같은 역할을 한다.네비게이션은 보통 링크들을
+      포함하는 리스트로 만들어진다.
+    </nav>
+  </header>
+  <a href="/book_1.html">특수문자</a>
+  <input type="button">
+  <button onclick="alert('No type')">그냥 버튼</button>
+  <button onclick="alert('Submit')" type="submit">전송버튼</button>
+  <input type="text"/>
+  <button onclick="doNothing();">그냥 UI조작을 위한 버튼</button>
+  <button type="submit">내가 바로 전송 버튼!</button>
+  <div>
+    <div><p>텍스트_단락이라는 뜻을 가진 Paragraph를 뜻하며 개행을 포함한다.</p></div>
+    <div><u>텍스트_밑줄을 그은다.</u></div>
+    <div><i>텍스트_이탈릭체(약간 기울어진 모습)으로 나타낸다.</i></div>
+    <div><b>텍스트_텍스트를 Bold(굵음)처리 한다.</b></div>
+    <div><br>단일 태그로서 개행을 할 때 사용한다.</div>
+    <div><em>텍스트_겉보기에는 이탈릭체와 똑같지만 음성으로 읽어주는 경우 더욱 강조해서 읽어준다.</em></div>
+    <div><h1>텍스트_Heading,제목을 뜻하며 1이 가장 크며 6까지 가면서 점점작아진다.</h1></div>
+    <div><h6>텍스트</h6></div>
+    <div><ruby>결과에서 보이는 것처럼 한자와 음을 나타내며 사용할 수 있다.
+      凸<rt>볼록할 철</rt>
+      test<rt>연습</rt>
+    </ruby></div>
+  </div>
+  <div>
+    <a href="">하이퍼링크를 건다.href에 이동할 주소를 입력하고 #을 입력할 시 자신을 연다. target속성으로
+      "_blank"를 주면 해당 페이지를 새창으로 연다.
+    </a>
+    <pre>텍스트들을 나타내며 pre태그 안 공백이나 개행들이 그대로 유지된다.</pre>
+    <img src="" alt="" style="width: 100px; height: 100px;">
+    <video src="">비디오 형식의 파일을 보여준다.width속성이나 height속성이 있어서 크기를 지정하는 등
+      여러가지 속설을 사용할 수 있다.
+    </video>
+    <audio src="오디오 경로" type="audio/.mp3">오디오 형식의 파일을 보여준다.type으로 해당 오디오 파일의 확장명을 지정해주어야 한다.</audio>
+  </div>
+  <section>
+    글 내용을 세부적인 내용에 따라 구분할 때 사용한다. 책으로 표현한다면 1장(Chapter Part)를 나타낸다.
+    한 section은 시작으로 h1~h6헤딩 태그를 사용하여서 섹션의 주제를 표현하는 것은 좋으며 하나의 헤딩 태그만을
+    사용하여서 주제를 명확하게 해주어야 한다.
+  </section>
+  <article>section에서는 페이지의 본문을 나타냈었다면 article은 section의 내용을 보조해주는 내용들을 나타낸다.</article>
+  <div>텍스트_스타일을 지정하거나 이벤트를 수행하기 위한 컨테이너로 사용된다.(결과를 보면 div는 한줄을 끝까지 채운다.이는 block형식이라하며 가로(한줄)를 다 채운다.</div>
+  <span>텍스트_div와 마찬가지로 스타일을 지정하거나 이벤트를 수행하기 위한 컨테이너로 사용된다.(단,div와 달리 inline형식으로 자신</span>
+  <aside>주로 페이지 본문 바깥 부분의 오른쪽이나 왼쪽에 배치된다.페이지 본문과는 상관없는 내요용이 담긴다.</aside>
+  <footer>보통 웹 페이지의 하단 부분을 배치된다. 이곳에는 페이지의 저작권 정보나 저작자 정보,관련된문서 또는, 주소나
+    전화번호 등을 나타낸다.
+  </footer>
 </body>
 </html>
